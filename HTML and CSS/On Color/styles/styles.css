@@ -1,0 +1,105 @@
+/*Text formatting*/
+
+p, ul, ol {
+	color: black;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1em;
+	line-height: 1.3em;
+	text-align: left;
+}
+
+/*Link states*/
+
+a:link, a:visited {
+	color: black;
+	background: LightGray;
+	text-decoration: none;
+}
+
+a:focus, a:hover {
+	color: white;
+}
+
+a:active {
+	background-color: black;
+}
+
+/*Linked font*/
+
+@font-face {
+	font-family: Raleway;
+	src:
+		url('fonts/raleway.eot'),
+		url('fonts/raleway.ttf'),
+		url('fonts/raleway.woff'),
+		url('fonts/raleway.svg');
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Raleway, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+/*Page structure*/
+
+#container {
+	width: 80%;
+	margin: auto;
+}
+
+#content {
+	margin-top: 4em;
+	border-top: 1px solid black;
+}
+
+#footer {
+	margin-top: 2em;
+}
+
+/*Flow of content*/
+
+img {
+	float: left;
+	padding-right: 2%;
+	padding-bottom: .5em;
+}
+
+ul, ol {
+	list-style: none;
+	padding-left: 0;
+}
+
+li {
+	float: left;
+	padding-right: 2%;
+}
+
+.shift {
+	position: relative;
+	left: 9em;
+	top: 9em;
+	z-index: -1;
+	opacity: .5;
+	display: none;
+}
+
+/*Media query*/
+
+@media only screen and (min-width: 860px) {
+	.col1 {
+		width: 32%;
+		float: left;
+		margin-right: 2%;
+	}
+
+	.col2 {
+		width: 32%;
+		float: left;
+		margin-right: 2%;
+	}
+
+	.col3 {
+		width: 32%;
+		float: left;
+	}
+}

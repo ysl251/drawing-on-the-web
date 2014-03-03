@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Basic Animation</title>
+		<style>
+			.square {
+				width: 300px;
+				height: 300px;
+				background: red;
+				position: relative;
+				/*animation-name: colors;
+				-webkit-animation-name: colors;
+				animation-duration: 5s;
+				-webkit-animation-duration: 5s;*/
+				animation: colors 5s;
+				-webkit-animation: colors 5s;
+				animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+			}
+
+			@keyframes colors {
+				0% {background: rgb(255, 0, 0); left: 0px; top: 0px;} /*red*/
+				33% {background: rgb(0, 0, 255); left: 300px; top: 0px;} /*blue*/
+				66% {background: rgb(0, 255, 0); left: 300px; top: 300px;} /*green*/
+				100% {background: rgb(255, 0, 0); left: 0px; top: 0px;} /*red*/
+			}
+
+			@-webkit-keyframes colors {
+				0% {background: rgb(255, 0, 0); left: 0px; top: 0px;} /*red*/
+				33% {background: rgb(0, 0, 255); left: 300px; top: 0px;} /*blue*/
+				66% {background: rgb(0, 255, 0); left: 300px; top: 300px;} /*green*/
+				100% {background: rgb(255, 0, 0); left: 0px; top: 0px;} /*red*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="square"></div>
+	</body>
+
+</html>

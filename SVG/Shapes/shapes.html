@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>SVG Shapes</title>
+		<style>
+			#container {
+				width: 550px;
+				height: 100%;
+				margin: auto;
+			}
+
+			#shapes {
+				height: 300px;
+				position: absolute;
+				top: 50%;
+				margin-top: -150px;
+			}
+
+			rect {
+				fill: url(#gradient3);
+				opacity: 0.8;
+			}
+
+			circle {
+				fill: url(#gradient1);
+				opacity: 0.8;
+			}
+
+			polygon {
+				fill: url(#gradient2);
+				opacity: 0.8;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="shapes">
+				<svg width="550" height="300">
+					<defs>
+						<linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+							<stop offset="0%" stop-color="cyan" />
+							<stop offset="100%" stop-color="yellow" />
+						</linearGradient>
+					</defs>
+					
+					<defs>
+						<linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+							<stop offset="0%" stop-color="magenta" />
+							<stop offset="100%" stop-color="cyan" />
+						</linearGradient>
+					</defs>
+					
+					<defs>
+						<linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+							<stop offset="0%" stop-color="yellow" />
+							<stop offset="100%" stop-color="magenta" />
+						</linearGradient>
+					</defs>
+
+					<!-- Square -->
+					<rect x="30" y="30" width="240" height="240" />
+					
+					<!-- Circle -->
+					<circle cx="270" cy="150" r="120" />
+					
+					<!-- Triangle -->
+					<polygon points="400,30 270,270 520,270" />
+				</svg>
+			</div>
+		</div>
+	</body>
+
+</html>
